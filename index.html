@@ -9,21 +9,14 @@
 </head>
 <body>
 
-    <form id="myForm"></form>
-<h1>
-    おみくじ
-</h1>
+<div class="justify-content-center">
+    <h1>
+        おみくじ
+    </h1>
+    <button type="button"  class="btn btn-outline-primary" onclick="getRandomResult()">おみくじを引く</button>
+    <p id="result" style="font-size: xx-large;"> </p>
 
-
-
-<button type="button"  class="btn btn-outline-primary" onclick="getRandomResult()">おみくじを引く</button>
-
-
-
-<p id="result" style="font-size: xx-large;"> </p>
-
-
-
+</div>
 <script>
 function getRandomResult() {
     var results = ["大吉","中吉","小吉","吉","末吉","凶","大凶"]
@@ -38,6 +31,5 @@ function getRandomResult() {
 
 
 </script>
-
 </body>
 </html>
