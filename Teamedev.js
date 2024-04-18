@@ -19,6 +19,7 @@ function handleInput(input) {
     process.exit(0);
   } else {
     drawKuzi();
+
   }
 }
 
