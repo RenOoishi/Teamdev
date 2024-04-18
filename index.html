@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <form id="myForm"></form>
+<h1>
+    KUJI
+</h1>
+
+
+
+<button type="button"  class="btn btn-outline-primary" onclick="getRandomResult()">Get Result</button>
+
+
+
+<p id="result" style="font-size: xx-large;"> </p>
+
+
+
+<script>
+function getRandomResult() {
+    var results = ["大吉","中吉","小吉","吉","末吉","凶","大凶"]
+
+    var randomIndex = Math.floor(Math.random() * results.length);
+    var randomResult = results[randomIndex];
+
+    document.getElementById("result").innerText = randomResult;
+
+
+}
+
+
+</script>
+
+</body>
+</html>
